@@ -1,1 +1,3 @@
-# t18innovations
+to start:
+
+npm start
