@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Mulish', sans-serif;
+}
+
+.sidebar {
+  background: #363740;
+  width: 25.5rem;
+}
+
+.sidebar__dash {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.1rem 3.2rem;
+  margin-bottom: 3rem;
+}
+
+.sidebar__dashlogo {
+  position: relative;
+  margin-right: 2rem;
+  z-index: 999;
+}
+
+.sidebar__dashlogo::before {
+  content: "";
+  width: 3.2rem;
+  height: 3.2rem;
+  background: #3751ff;
+  position: absolute;
+  top: -53%;
+  left: -95%;
+  z-index: -1;
+  border-radius: 50%;
+}
+
+.sidebar__dashtext {
+  color: #a4a6b3;
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.sidebar__links1, .sidebar__links2 {
+  list-style: none;
+}
+
+.sidebar__links1 {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid #40414a;
+}
+
+.sidebar__links2 {
+  padding-top: 1.6rem;
+}
+
+.sidebar li {
+  position: relative;
+}
+
+.sidebar li ::before {
+  content: "";
+  height: 100%;
+  width: 0;
+  position: absolute;
+  left: 0;
+  background: #dde2ff;
+  -webkit-transition: width 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out;
+}
+
+.sidebar li:hover ::before {
+  width: 3px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6rem;
+  height: 5.6rem;
+  width: 100%;
+  display: block;
+  letter-spacing: 0.2px;
+  color: #a4a6b3;
+  padding-left: 3.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar a svg {
+  margin-right: 2.4rem;
+}
+
+.sidebar a:hover {
+  color: #dde2ff;
+  background: #3e4049;
+}
+
+.sidebar a:hover path {
+  fill: white;
+  opacity: 0.6;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main {
+  background: #E5E5E5;
+  width: 82.29%;
+  padding: 3.6rem 3rem 3rem;
+  color: #252733;
+}
+
+.main__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6.8rem;
+}
+
+.main__header-box1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #252733;
+  letter-spacing: 0.3px;
+}
+
+.main__header-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__header-icons {
+  margin-right: 3.2rem;
+}
+
+.main__header-icons > * {
+  margin-left: 2.8rem;
+}
+
+.main__header-icons > *:hover {
+  cursor: pointer;
+}
+
+.main__user {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding-left: 3.2rem;
+  border-left: 1px solid #C5C7CD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__user img {
+  height: 4.4rem;
+  width: 4.4rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 49%;
+  border: 1.5px solid #d1d2db;
+  padding: 2px;
+  margin-left: 1.4rem;
+}
+
+.main__container {
+  background: white;
+  border: 1px solid #C5C7CD;
+  border-radius: 8px;
+}
+
+.main__container-row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3.2rem 3.2rem 4.8rem;
+}
+
+.main__ticket-text {
+  font-size: 1.9rem;
+  letter-spacing: 0.4px;
+}
+
+.main__tickets-opt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4rem;
+  letter-spacing: 0.2px;
+}
+
+.main__tickets-opt p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 3.4rem;
+}
+
+.main__tickets-opt p img {
+  margin-right: 1rem;
+}
+
+.main__head {
+  border-bottom: 1.5px solid #DFE0EB;
+  letter-spacing: 0.2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #9fa2b4;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 0 3.2rem 1.2rem;
+}
+
+.main__head :not(:nth-child(4)) {
+  margin-right: 4rem;
+}
+
+.main__head :nth-child(1) {
+  width: 39%;
+}
+
+.main__head :nth-child(2) {
+  width: 18.5%;
+}
+
+.main__head :nth-child(3) {
+  width: 12.4%;
+}
+
+.main__head :nth-child(4) {
+  width: 9%;
+}
+
+.main__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 3.2rem;
+  height: 9.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #DFE0EB;
+}
+
+.main__content:hover {
+  background: rgba(55, 81, 255, 0.04);
+  cursor: pointer;
+}
+
+.main__cont-user {
+  width: 39%;
+  margin-right: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__cont-user img {
+  margin-right: 2.4rem;
+  border-radius: 49%;
+}
+
+.main__cont-name {
+  width: 18.5%;
+  margin-right: 4rem;
+}
+
+.main__cont-date {
+  width: 12.4%;
+  margin-right: 4rem;
+}
+
+.main__cont-prior {
+  width: 9%;
+  text-transform: uppercase;
+}
+
+.main__cont-main {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: .7rem;
+}
+
+.main__cont-sub {
+  font-size: 1.2rem;
+  color: #c5c7cd;
+}
+
+.main__cont-prior {
+  font-size: 1.1rem;
+  color: white;
+  margin-right: 3.2rem;
+}
+
+.main__cont-prior p {
+  background: red;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem 1.2rem;
+  border-radius: 100px;
+}
+
+.main__foot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  height: 7.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9fa2b4;
+  padding-right: 3rem;
+  font-size: 1.4rem;
+}
+
+.main__foot svg {
+  color: #9FA2B4;
+}
+
+.main__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__page select {
+  border: none;
+  outline: none;
+  margin-left: 0.8rem;
+  color: #4b506d;
+}
+
+.main__pagination {
+  margin-left: 3.3rem;
+}
+
+.main__next {
+  margin-left: 3rem;
+}
+
+.main__entry {
+  margin-left: 5rem;
+}

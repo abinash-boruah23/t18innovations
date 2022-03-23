@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+  
+.container{
+    display: flex;
+    font-family: 'Mulish', sans-serif;
+}
+
+.sidebar{
+    background: #363740;
+    width: 25.5rem;
+
+    &__dash{
+        display: flex;
+        align-items: center;
+        padding: 4.1rem 3.2rem;
+        margin-bottom: 3rem;
+    }
+
+    &__dashlogo{
+        position: relative;
+        margin-right: 2rem;
+        z-index: 999;
+    }
+
+    &__dashlogo::before{
+        content: "";
+        width: 3.2rem;
+        height: 3.2rem;
+        background: rgba(55, 81, 255, 1);
+        position: absolute;
+        top: -53%;
+        left: -95%;
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    &__dashtext{
+        color: rgba(164, 166, 179, 1);
+        font-size: 1.9rem;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+    }
+
+    &__links1, &__links2{
+        list-style: none;
+    }
+
+    &__links1{
+        padding-bottom: 1.6rem;
+        border-bottom: 1px solid rgb(64,65,74);
+    }
+
+    &__links2{
+        padding-top: 1.6rem;
+    }
+
+    li{
+        position: relative;
+        ::before{
+            content: "";
+            height: 100%;
+            width:0;
+            position: absolute;
+            left: 0;
+            background: rgba(221, 226, 255, 1);
+            transition: width 0.2s ease-in-out;
+        }
+
+        &:hover ::before{
+            width: 3px;
+        }
+    }
+    
+
+    a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.6rem;
+        height: 5.6rem;
+        width: 100%;
+        display: block;
+        letter-spacing: 0.2px;
+        color: rgba(164, 166, 179, 1);
+        padding-left: 3.2rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+         svg{
+             margin-right: 2.4rem;
+         }
+
+        &:hover{
+            color: rgba(221, 226, 255, 1);
+            background: rgb(62,64,73);
+            path{
+                fill: white;
+                opacity: 0.6;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }
+}
+
+.main{
+    background: #E5E5E5;
+    width: 82.29%;
+    padding: 3.6rem 3rem 3rem;
+    color: #252733;
+
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 6.8rem;
+    }
+    &__header-box1{
+        font-size: 2.4rem;
+        font-weight: 700;
+        color: #252733;
+        letter-spacing: 0.3px;
+    }
+
+    &__header-box2{
+        display: flex;
+    }
+
+    &__header-icons{
+        margin-right: 3.2rem;
+        >*{
+            margin-left: 2.8rem;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__user{
+        font-size: 1.4rem;
+        font-weight: 600;
+        padding-left: 3.2rem;
+        border-left: 1px solid #C5C7CD;
+        display: flex;
+        align-items: center;
+        img{
+            height: 4.4rem;
+            width: 4.4rem;
+            object-fit: cover;
+            border-radius: 49%;
+            border: 1.5px solid #d1d2db;
+            padding: 2px;
+            margin-left: 1.4rem;
+        }
+    }
+
+    &__container{
+        background: white;
+        border: 1px solid #C5C7CD;
+        border-radius: 8px;
+    }
+
+    &__container-row1{
+        display: flex;
+        justify-content: space-between;
+        padding: 3.2rem 3.2rem 4.8rem;
+    }
+
+    &__ticket-text{
+        font-size: 1.9rem;
+        letter-spacing: 0.4px;
+    }
+
+    &__tickets-opt{
+        display: flex;
+        font-size: 1.4rem;
+        letter-spacing: 0.2px;
+        p{
+            display: flex;
+            align-items: center;
+            margin-left: 3.4rem;
+            img{
+                margin-right: 1rem;
+            }
+        }
+    }
+
+    &__head{
+        border-bottom: 1.5px solid #DFE0EB;
+        letter-spacing: 0.2px;
+        display: flex;
+        color: rgba(159, 162, 180, 1);
+        font-size: 1.4rem;
+        font-weight: 700;
+        padding: 0 3.2rem 1.2rem;
+
+        :not(:nth-child(4)){
+            margin-right: 4rem;
+        }
+
+        :nth-child(1){
+            width: 39%;
+        }
+        :nth-child(2){
+            width: 18.5%;
+        }
+        :nth-child(3){
+            width: 12.4%;
+        }
+        :nth-child(4){
+            width: 9%;
+        }
+    }
+
+    &__content{
+        display: flex;
+        width: 100%;
+        padding: 0 3.2rem;
+        height: 9.2rem;
+        align-items: center;
+        border-bottom: 1px solid #DFE0EB;
+        &:hover{
+            background: rgba(55, 81, 255, 0.04);
+            cursor: pointer;
+        }
+    }
+
+    &__cont-user{
+        width: 39%;
+        margin-right: 4rem;
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 2.4rem;
+            border-radius: 49%;
+        }
+    }
+
+    &__cont-name{
+        width: 18.5%;
+        margin-right: 4rem;
+    }
+
+    &__cont-date{
+        width: 12.4%;
+        margin-right: 4rem;
+    }
+
+    &__cont-prior{
+        width: 9%;
+        text-transform: uppercase;
+    }
+ 
+    &__cont-main{
+        font-size: 1.4rem;
+        font-weight: 600;
+        letter-spacing: 0.2px;
+        margin-bottom: .7rem;
+    }
+
+    &__cont-sub{
+        font-size: 1.2rem;
+        color: rgba(197, 199, 205, 1);
+    }
+
+    &__cont-prior{
+        font-size: 1.1rem;
+        color: white;
+        margin-right: 3.2rem;
+        p{
+            background: red;
+            width: fit-content;
+            padding: 0.5rem 1.2rem;
+            border-radius: 100px;
+        }
+    }
+
+    &__foot{
+        display: flex;
+        justify-content: end;
+        height: 7.2rem;
+        align-items: center;
+        color: rgba(159, 162, 180, 1);
+        padding-right: 3rem;
+        font-size: 1.4rem;
+        svg{
+            color: #9FA2B4;
+        }
+    }
+
+    &__page{
+        display: flex;
+        align-items: center;
+        select{
+            border: none;
+            outline: none;
+            margin-left: 0.8rem;
+            color: rgba(75, 80, 109, 1);
+        }
+    }
+
+    &__pagination{
+        margin-left: 3.3rem;
+    }
+
+    &__next{
+        margin-left: 3rem;
+    }
+
+    &__entry{
+        margin-left: 5rem;
+    }
+}
